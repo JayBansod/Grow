@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -6,7 +7,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import "../Css/Navbar.css";
 const Navbar = () => {
-  const [showIcon, setShowIcon] = useState(false);
+  // const [showIcon, setShowIcon] = useState(false);
+
+  // const sidebar = document.getElementById("hideShow");
+
   return (
     <>
       <div className="navbar">
@@ -15,13 +19,21 @@ const Navbar = () => {
             <p>JayBansod</p>
           </NavLink>
         </div>
-        <div className={showIcon ? "nav_links active" : "nav_links"}>
+        <div
+          // className={showIcon ? "nav_links active" : "nav_links"}
+          className="nav_links"
+          id="hideShow"
+        >
           <ul className="ul">
             <li className="li">
               <NavLink
                 to="/"
                 style={{ textDecoration: "none" }}
                 className="nevigation"
+                onClick={() => {
+                  const sidebar = document.getElementById("hideShow");
+                  sidebar.classList.toggle("active");
+                }}
               >
                 Home
               </NavLink>
@@ -32,6 +44,10 @@ const Navbar = () => {
                 className="nevigation"
                 to="/about"
                 style={{ textDecoration: "none" }}
+                onClick={() => {
+                  const sidebar = document.getElementById("hideShow");
+                  sidebar.classList.toggle("active");
+                }}
               >
                 About
               </NavLink>
@@ -41,6 +57,10 @@ const Navbar = () => {
                 className="nevigation"
                 to="/services"
                 style={{ textDecoration: "none" }}
+                onClick={() => {
+                  const sidebar = document.getElementById("hideShow");
+                  sidebar.classList.toggle("active");
+                }}
               >
                 Services
               </NavLink>
@@ -50,6 +70,10 @@ const Navbar = () => {
                 className="nevigation"
                 to="/contact"
                 style={{ textDecoration: "none" }}
+                onClick={() => {
+                  const sidebar = document.getElementById("hideShow");
+                  sidebar.classList.toggle("active");
+                }}
               >
                 Contact
               </NavLink>
@@ -84,8 +108,11 @@ const Navbar = () => {
             </li>
             <li id="menu">
               <span
+                id="menu"
                 onClick={() => {
-                  setShowIcon(!showIcon);
+                  // setShowIcon(!showIcon);
+                  const sidebar = document.getElementById("hideShow");
+                  sidebar.classList.toggle("active");
                 }}
               >
                 <MenuIcon />
