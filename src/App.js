@@ -13,10 +13,11 @@ function App() {
     <>
       <Navbar />
       <Routes className="Routes">
-        <Route path="/" element={<Home />} />
+        <Route path="/live/" element={<Home />} />
         <Route path="/about" element={<About />} show={showIcon} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
       </Routes>
 
       {/* <Mydrawer /> */}
