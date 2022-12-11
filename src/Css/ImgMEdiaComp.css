@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maindiv {
+    width: 100%;
+    height: auto;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.cards {
+    /* position: absolute; */
+    margin: 30px 20px;
+    width: 340px;
+    height: auto;
+    padding-top: 20px;
+    background-color: #b7b7b759;
+    box-shadow: 0px 20px 20px -20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 13px;
+    line-height: 20px;
+    transition: scale 1s;
+}
+
+#ss:hover {
+    scale: 1.05;
+}
+
+#ss:hover .seriesImage {
+    transform: translateY(-20px);
+}
+
+.divsub {
+    position: relative;
+    padding: 20px 10px;
+}
+
+.seriesImage {
+    width: 250px;
+    height: 200px;
+    border-radius: 18px;
+    transition: transform 1s;
+}
+
+.btn {
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    background-color: #cd97e7;
+    transition: background 1s ease-out;
+}
+
+.btn:hover {
+    background: #a319e3;
+    border: 1px solid black;
+}
+@media (max-width:1230px){
+    .maindiv{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 960px) {
+    .maindiv {
+        display: flex;
+        /* justify-content: center; */
+    }
+}
+@media screen and (max-width: 860px) {
+    .maindiv {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .maindiv {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,57 @@
+.main{
+    width: 100%;
+    height: 80vh;
+    /* background: springgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_card{
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #8570ff;
+    padding-left:30px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px -20px black;
+}
+.inputs_div{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input{
+    margin: 20px 0px;
+    border: 1px solid #8570ff;
+    border-radius: 10px;
+    outline: none;
+    height: 50px;
+    text-align: center;
+    background: transparent;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image{
+    width: 70%;
+}
+@media (max-width:768px){
+    .main_card{
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: 0;
+        top: 15vh;
+    }
+    .input{
+        width: 80%;
+    }
+}
