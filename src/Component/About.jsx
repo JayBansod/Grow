@@ -8,7 +8,7 @@ const About = () => {
       <Common
         forH1={"Welcome to about Page"}
         imag={Rocket}
-        visit={"./contact"}
+        visit={"/contact"}
         butname={"Contact Us"}
       />
     </>
