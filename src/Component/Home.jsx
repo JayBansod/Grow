@@ -7,7 +7,7 @@ const Home = () => {
       <Common
         forH1={"Grow Your business with"}
         imag={Rocket}
-        visit={"./about"}
+        visit={"about"}
         butname={"Get Started"}
       />
     </>

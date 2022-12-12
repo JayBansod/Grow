@@ -8,15 +8,15 @@ import Contact from "./Component/Contact";
 // import Mydrawer from "./Component/Mydrawer";
 
 function App() {
-  const showIcon = "false";
   return (
     <>
       <Navbar />
       <Routes className="Routes">
         <Route path="/live/" element={<Home />} />
-        <Route path="/about" element={<About />} show={showIcon} />
+        <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about/contact" element={<Contact />} />
         <Route path="/" element={<Home />} />
       </Routes>
 
