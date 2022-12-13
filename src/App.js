@@ -5,7 +5,6 @@ import Home from "./Component/Home";
 import Services from "./Component/Services";
 import Navbar from "./Component/Navbar";
 import Contact from "./Component/Contact";
-// import Mydrawer from "./Component/Mydrawer";
 
 function App() {
   return (
@@ -16,8 +15,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/about/contact" element={<Contact />} /> */}
+        <Route path="/about/contact" element={<Contact />} />
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Routes>
 
       {/* <Mydrawer /> */}
