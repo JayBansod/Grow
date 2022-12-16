@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Grow/static/css/main.9e32b8b9.css",
+    "main.js": "/Grow/static/js/main.d47031bb.js",
+    "static/media/digital-marketing.png": "/Grow/static/media/digital-marketing.5d7bbbd119e786c2f94f.png",
+    "static/media/web dev.png": "/Grow/static/media/web dev.f78412fca18851622a64.png",
+    "static/media/android.jpg": "/Grow/static/media/android.374c03de4110e32e67bc.jpg",
+    "static/media/exel.jpg": "/Grow/static/media/exel.ed587bbf1782f980a447.jpg",
+    "static/media/bac.png": "/Grow/static/media/bac.a7416b9d07df6408508c.png",
+    "static/media/software-development.jpg": "/Grow/static/media/software-development.97d0539910b1faa664e4.jpg",
+    "static/media/about.png": "/Grow/static/media/about.d93c39c6b94c5dd15f88.png",
+    "static/media/1.png": "/Grow/static/media/1.8e5da2a119f536c4bcbc.png",
+    "index.html": "/Grow/index.html",
+    "main.9e32b8b9.css.map": "/Grow/static/css/main.9e32b8b9.css.map",
+    "main.d47031bb.js.map": "/Grow/static/js/main.d47031bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e32b8b9.css",
+    "static/js/main.d47031bb.js"
+  ]
+}
